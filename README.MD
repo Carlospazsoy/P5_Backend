@@ -1,10 +1,18 @@
 CODIGO DE TU BACKEND DESPLEGADO
 
 git add .
+
 git commit -m 'mi commit'
+
 git remote add origin https://github.com/Carlospazsoy/P5_Backend.git
+
 git push -u origin main
+
 Se creó un script "start": "node ./src/index.js"
+
+configuracion de variables de entorno 
+
+LISTO!!
 
 Este proyecto esta basado en el repositorio de git:
 https://github.com/Carlospazsoy/s22-backend
