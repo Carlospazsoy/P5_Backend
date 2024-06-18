@@ -13,7 +13,7 @@ function auth(app) {
   authRouter.get('/user/:id/preferred-address', getPreferredAddress); 
   authRouter.post("/login", login ); //endpoint 
   authRouter.post('/signup', signup );
-  authRouter.get('/recover', authToken, recover ); /* ultima feature para que la sesion se pueda recuperar, implementando middleware que recibe el token al hacer login */
+  authRouter.get('/recover', recover ); /* ultima feature para que la sesion se pueda recuperar, implementando middleware que recibe el token al hacer login */
   authRouter.post('/password_recovery', passwordRecovery );
   authRouter.post('/change_password', changePassword);
   authRouter.patch('/update_role/:id', authToken, verifyAllRoles(['ADMIN', 'EDITOR']),  updateRole ); /* ultima feature para que la sesion se pueda recuperar */
