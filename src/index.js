@@ -18,14 +18,10 @@ const app = express();
 connect();
 
 //Conexion entre back y front
-
-const corsOptions = {
-  // origin: 'https://carlospazsoy.github.io/P5_Frontend/',
-  origin: 'https://localhost:5173',
-  methods: ['GET', 'POST', 'PUT', 'DELETE'],
-  allowedHeaders: ['Content-Type', 'Authorization'],
-};
-app.use(cors(corsOptions));
+app.use(cors({
+  //esta sera proximamente tu url desplegada de react 
+  origin: ['http://localhost:5173/']
+}))
 // Middleware para ser capaces de intercambiar formato json entre nuestro backend y frontend
 app.use(express.json());
 
