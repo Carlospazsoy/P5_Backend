@@ -20,7 +20,7 @@ connect();
 //Conexion entre back y front
 
 const corsOptions = {
-  origin: 'https://carlospazsoy.github.io',
+  origin: 'https://carlospazsoy.github.io/P5_Frontend/',
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
   allowedHeaders: ['Content-Type', 'Authorization'],
 };
