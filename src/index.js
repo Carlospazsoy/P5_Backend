@@ -20,7 +20,7 @@ connect();
 //Conexion entre back y front
 app.use(cors({
   //esta sera proximamente tu url desplegada de react 
-  origin: ['https://carlospazsoy.github.io/P5_Frontend/']
+  origin: ['https://carlospazsoy.github.io']
 }))
 // Middleware para ser capaces de intercambiar formato json entre nuestro backend y frontend
 app.use(express.json());
