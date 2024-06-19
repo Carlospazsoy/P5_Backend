@@ -20,7 +20,8 @@ connect();
 //Conexion entre back y front
 app.use(cors({
   //esta sera proximamente tu url desplegada de react 
-  origin: ['http://localhost:3000'],
+  // origin: ['http://localhost:3000'],
+  origin: ['https://carlospazsoy.github.io/p5-frontend/'],
   // origin: ['https://carlospazsoy.github.io/'],
 }))
 
