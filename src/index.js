@@ -21,7 +21,7 @@ connect();
 app.use(cors({
   //esta sera proximamente tu url desplegada de react 
   // origin: ['http://localhost:5173']
-  origin: ['https://carlospazsoy.github.io/']
+  origin: ['https://carlospazsoy.github.io']
 }))
 // Middleware para ser capaces de intercambiar formato json entre nuestro backend y frontend
 app.use(express.json());
