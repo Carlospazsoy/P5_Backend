@@ -18,14 +18,11 @@ const app = express();
 connect();
 
 //Conexion entre back y front
-
 app.use(cors({
-  origin: '*'
-}));
-
-/* app.use(cors({
-  origin: ['http://localhost:5173/']
-})) */
+  //esta sera proximamente tu url desplegada de react 
+  // origin: ['http://localhost:5173']
+  origin: ['https://carlospazsoy.github.io/']
+}))
 // Middleware para ser capaces de intercambiar formato json entre nuestro backend y frontend
 app.use(express.json());
 
