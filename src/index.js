@@ -63,7 +63,7 @@ app.use(handleAuthError)
 
 app.get("/", (req, res) => {
   return res.json({
-    message: "Aplicacion en ejecución 👍🏽",
+    message: "Backend de Carlos Paz en ejecución 👍🏽",
   });
 });
 
